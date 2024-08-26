@@ -30,8 +30,7 @@ public class SplashScreen extends AppCompatActivity {
 
         img.setAnimation(top);
 
-
-        new Handler().postDelayed(new Runnable() {
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(SplashScreen.this,players.class);
