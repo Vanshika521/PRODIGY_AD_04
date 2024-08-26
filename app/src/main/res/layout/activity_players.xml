@@ -68,6 +68,17 @@
                 android:drawablePadding="8dp"
                 />
 
+            <Button
+                android:id="@+id/start"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:text="Start Game"
+                android:textSize="18sp"
+                android:backgroundTint="@color/lavender"
+                />
+
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
