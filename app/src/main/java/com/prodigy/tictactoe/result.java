@@ -38,7 +38,7 @@ public class result extends Dialog {
         again.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mainActivity.restartMatch();
+                mainActivity.restart();
                 dismiss();
             }
         });
