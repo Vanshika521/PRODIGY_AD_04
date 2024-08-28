@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         a.add(new int[] {0,4,8});
         a.add(new int[] {2,4,6});
 
-        String player_first = getIntent().getStringExtra("Player One");
-        String player_second = getIntent().getStringExtra("Player Two");
+        String player_first = getIntent().getStringExtra("first");
+        String player_second = getIntent().getStringExtra("second");
 
         binding.first.setText(player_first);
         binding.second.setText(player_second);
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         {
             img.setImageResource(R.drawable.cross);
             if(check()){
-                result result = new result (MainActivity.this,binding.first.getText().toString()+"is Winner!!!",MainActivity.this);
+                result result = new result (MainActivity.this,binding.first.getText().toString()+" is Winner!!!",MainActivity.this);
                 result.setCancelable(false);
                 result.show();
             }
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         {
             img.setImageResource(R.drawable.zero);
             if(check()){
-                result result = new result (MainActivity.this,binding.second.getText().toString()+"is Winner!!!",MainActivity.this);
+                result result = new result (MainActivity.this,binding.second.getText().toString()+" is Winner!!!",MainActivity.this);
                 result.setCancelable(false);
                 result.show();
             }
@@ -168,12 +168,12 @@ public class MainActivity extends AppCompatActivity {
         if(turn ==1 )
         {
             binding.first.setBackgroundResource(R.drawable.bborder);
-            binding.first.setBackgroundResource(R.drawable.wbox);
+            binding.second.setBackgroundResource(R.drawable.wbox);
         }
         else
         {
             binding.second.setBackgroundResource(R.drawable.bborder);
-            binding.second.setBackgroundResource(R.drawable.wbox);
+            binding.first.setBackgroundResource(R.drawable.wbox);
         }
 
     }

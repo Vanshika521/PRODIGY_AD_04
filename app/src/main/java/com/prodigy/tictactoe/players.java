@@ -41,8 +41,8 @@ public class players extends AppCompatActivity {
                 else
                 {
                     Intent intent = new Intent(players.this, MainActivity.class);
-                    intent.putExtra("First",getFirst);
-                    intent.putExtra("Second",getSecond);
+                    intent.putExtra("first",getFirst);
+                    intent.putExtra("second",getSecond);
                     startActivity(intent);
                 }
                 }
